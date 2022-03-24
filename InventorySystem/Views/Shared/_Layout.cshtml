@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body style="padding-top: 0px">
+    <header>
+        <nav class="navbar navbar" style="height: 100px; background-color: #0d3857;">
+            <img class="img-fluid" src="~/Content/Imagenes/logo_blanco.svg" alt="Responsive image" height="110" width="110" style="margin-right: 1400px">
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+<div class="modal" id="agregarRecursos" tabindex="-1" role="dialog" aria-labelledby="FormModalLabel" aria-hidden="true" style="background: none;" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document" style="max-width: 950px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="margin-top: 5px; font-size: 23px;">Ingresar Recursos</h5>
+                <button type="button" class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2>Datos</h2>
+                <br />
+                <label for="tipoEquipo">Equipo</label>
+                <label for="marca">Marca</label>
+                <label for="modelo">Modelo</label>
+                <label for="serie">Serie</label>
+
+                <br />
+
+                <select id="customTipoEquipo" class="btn btn-light dropdown-toggle">
+                    <option value="" disabled selected>Seleccione</option>
+                </select>
+                <select id="customMarca" class="btn btn-light dropdown-toggle">
+                    <option value="" disabled selected>Seleccione</option>
+                </select>
+                <input type="text" maxlength="20" id="txtmodelo" />
+                <input type="text" maxlength="40" id="txtserie" />
+
+                <br /><br />
+
+                <label for="fechaIng">Fecha de Ingreso</label>
+                <label for="fechaadq">Fecha de Adquisición</label>
+                <label for="descripcion">Descripción</label>
+                <label for="descCorta">Descripción Corta</label>
+
+                <br />
+
+                <input type="date" id="txtfechaIng" />
+                <input type="date" id="txtfechaAdq" />
+                <input type="text" maxlength="75" id="txtdescripcion" />
+                <input type="text" maxlength="50" id="txtdescripcionCorta" />
+
+                <br /><br />
+
+                <label for="estado">Estado</label>
+                <label for="cantidad">Cantidad</label>
+                <label for="licencia">Licencia</label>
+                <label for="numParte">N° de Parte</label>
+                <label for="observacion">Observación</label>
+
+                <br />
+
+                <select id="customEstado" class="btn btn-light dropdown-toggle">
+                    <option value="" disabled selected>Seleccione</option>
+                </select>
+                <input type="number" min="1" id="txtcantidad" />
+                <input type="text" maxlength="25" id="txtlicencia" />
+                <input type="text" maxlength="20" id="txtnumParte" />
+                <input type="text" maxlength="50" id="txtobservacion" />
+
+                <br />
+
+                <label for="persona">Asignado a</label>
+
+                <br/>
+
+                <input type="text" readonly="readonly" id="txtPersona"/>
+
+            </div>
+            <div class="modal-footer" style="position: relative;">
+                <button id="btnIngresar" type="button" onclick="js_agregar_recurso_isocode();">Ingresar</button>
+                <button id="btnLimpiar" type="button" onclick="js_limpiarCamposIngresar()">Limpiar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="editarRecursos" tabindex="-1" role="dialog" aria-labelledby="FormModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document" style="max-width: 950px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="margin-top: 5px">Resumen de Recursos</h5>
+                <button type="button" class="close" data-dismiss="modal" style="font-size: 30px;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h5>Datos</h5>
+                <label for="edittipoEquipo">Equipo</label>
+                <label for="editmarca">Marca</label>
+                <label for="editmodelo">Modelo</label>
+                <label for="editserie">Serie</label>
+
+                <br />
+
+                <input type="text" id="customeditTipoEquipo" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="customeditMarca" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditmodelo" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditserie" disabled="disabled" style="background-color: lightgray" />
+
+                <br /><br />
+
+                <label for="editfechaIng">Ingreso</label>
+                <label for="editfechaadq">Adquisición</label>
+                <label for="editdescripcion">Descripción</label>
+                <label for="editdescCorta">Desc. Corta</label>
+
+                <br />
+
+                <input type="text" id="txteditfechaIng" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditfechaAdq" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditdescripcion" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditdescripcionCorta" disabled="disabled" style="background-color: lightgray" />
+
+                <br /><br />
+
+                <label for="editestado">Estado</label>
+                <label for="editcantidad">Cantidad</label>
+                <label for="editlicencia">Licencia</label>
+                <label for="editnumParte">N° de Parte</label>
+                <label for="editobservacion">Observación</label>
+
+                <br />
+
+                <select id="customeditEstado" class="btn btn-light dropdown-toggle"></select>
+                <input type="number" min="1" id="txteditcantidad" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditlicencia" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" id="txteditnumParte" disabled="disabled" style="background-color: lightgray" />
+                <input type="text" maxlength="50" id="txteditobservacion" />
+                
+                <input type="hidden" id="txtCorrelativo" />
+                <input type="hidden" id="txtEstadoOld" />
+                <input type="hidden" id="txtObservacionOld" />
+
+                <br /><br />
+
+                <label for="hist">Historial de Estados</label>
+
+                <br /><br />
+
+                <div class="table-responsive-vertical syc_table">
+                    <table class="table table-striped table-bordered" style="margin-bottom: 0;" id="listarHistorialRecurso">
+                        <thead>
+                            <tr class="table-dark">
+                                <th><center>Personal</center></th>
+                                <th><center>Cargo</center></th>
+                                <th><center>Fecha</center></th>
+                                <th><center>Estado</center></th>
+                                <th><center>Observación</center></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer" style="position: relative;">
+                <button id="btnActualizar" type="button" onclick="js_insertar_historial(document.getElementById('txtCorrelativo').value);">Actualizar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="SuccessRecurso" tabindex="-1" role="dialog" aria-labelledby="FormModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 350px; margin-top: 13%;">
+        <div class="modal-content" style="margin-top: 100px; border-radius: 10px; z-index: 1; width: 350px;">
+            <div class="modal-body">
+                <div class="success">
+                    <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" style="height: 80px; margin-left: 120px">
+                    <p style="margin-left: 90px; font-size: 18px; font-family: Roboto; font-weight: bold; font-style: normal; font-stretch: normal; color: #0d3857; margin-top: 10px">Recurso Ingresado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="SuccessModificar" tabindex="-1" role="dialog" aria-labelledby="FormModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 350px; margin-top: 13%;">
+        <div class="modal-content" style="margin-top: 100px; border-radius: 10px; z-index: 1; width: 350px;">
+            <div class="modal-body">
+                <div class="success">
+                    <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" style="height: 80px; margin-left: 120px">
+                    <p style="margin-left: 90px; font-size: 18px; font-family: Roboto; font-weight: bold; font-style: normal; font-stretch: normal; color: #0d3857; margin-top: 10px">Recurso Modificado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

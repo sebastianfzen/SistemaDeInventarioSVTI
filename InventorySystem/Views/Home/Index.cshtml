@@ -1,0 +1,791 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@Styles.Render("~/Content/filtro.css")
+@Styles.Render("~/Content/listaRecursos.css")
+@Styles.Render("~/Content/modalActualizar.css")
+@Styles.Render("~/Content/modalAgregar.css")
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-2">
+            <label for="filtro">Filtro</label>
+            <br />
+            <label>Equipos</label><br />
+            <select class="btn btn-light dropdown-toggle" style="margin-bottom: 10px" id="filtroEquipo">
+                <option value="" disabled selected>Seleccione</option>
+            </select>
+            <input type="hidden" id="idSubClase" />
+            <br />
+            <label>Marca</label><br />
+            <select class="btn btn-light dropdown-toggle" style="margin-bottom: 10px" id="filtroMarca">
+                <option value="" disabled selected>Seleccione</option>
+            </select>
+            <br />
+            <label>Modelo</label><br />
+            <input type="text" id="txtmodelofiltro" />
+            <br />
+            <label id="lblEstado">Estados</label><br />
+            <br /><button type="button" class="btn btn-light" onclick="js_filtro();">Filtrar</button>
+            <br /><br />
+        </div>
+
+        <div class="col-lg-10">
+
+            <label>Sistema de Inventario</label>
+            <br />
+            <label for="listarecursos">Lista de Recursos</label><a href="#" data-toggle="modal" data-target="#agregarRecursos">Agregar Recursos</a>
+            <br /><br />
+
+            <div class="table-responsive-vertical syc_table">
+                <table id="tablaListaRecursos" class="table table-striped table-bordered syc_table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th style="border-bottom-color: red;"><center>Actualizar</center></th>
+                            <th style="border-bottom-color: red;"><center>Tipo de Equipo</center></th>
+                            <th style="border-bottom-color: red;"><center>Cantidad</center></th>
+                            <th style="border-bottom-color: red;"><center>Marca</center></th>
+                            <th style="border-bottom-color: red;"><center>Modelo</center></th>
+                            <th style="border-bottom-color: red;"><center>Serie</center></th>
+                            <th style="border-bottom-color: red;"><center>Estado</center></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+
+    $(document).ready(function () {
+
+        js_listar_marca();
+        js_listar_sub_clase_recurso();
+        js_listar_estado_recurso();
+        listarRecursos();
+
+    });
+
+    /***********************************************************************************/
+    /*Funcion para limpiar campos del agregar                                          */
+    /***********************************************************************************/
+
+    function js_limpiarCamposIngresar() {
+        $('#customTipoEquipo').val('');
+        $('#txtfechaIng').val('');
+        $('#txtfechaAdq').val('');
+        $('#customEstado').val('');
+        $('#customMarca').val('');
+        $('#txtmodelo').val('');
+        $('#txtserie').val('');
+        $('#txtfechaIng').val('');
+        $('#txtfechaAdq').val('');
+        $('#txtdescripcion').val('');
+        $('#txtdescripcionCorta').val('');
+        $('#txtcantidad').val('');
+        $('#txtlicencia').val('');
+        $('#txtnumParte').val('');
+        $('#txtobservacion').val('');
+
+        document.getElementById('customTipoEquipo').style.borderColor = "";
+        document.getElementById('customMarca').style.borderColor = "";
+        document.getElementById('txtmodelo').style.borderColor = "";
+        document.getElementById('txtserie').style.borderColor = "";
+        document.getElementById('txtfechaIng').style.borderColor = "";
+        document.getElementById('txtfechaAdq').style.borderColor = "";
+        document.getElementById('txtdescripcion').style.borderColor = "";
+        document.getElementById('txtdescripcionCorta').style.borderColor = "";
+        document.getElementById('customEstado').style.borderColor = "";
+        document.getElementById('txtcantidad').style.borderColor = "";
+        document.getElementById('txtlicencia').style.borderColor = "";
+        document.getElementById('txtnumParte').style.borderColor = "";
+        document.getElementById('txtobservacion').style.borderColor = "";
+
+        document.getElementById('txteditobservacion').style.borderColor = "";
+        document.getElementById('customeditEstado').style.borderColor = "";
+
+    }
+
+    /***********************************************************************************/
+    /*Metodo para listar las marcas en el select "customMarca"                         */
+    /***********************************************************************************/
+
+    function js_listar_marca() {
+        $.ajax({
+            url: '@Url.Action("Ctrl_ListarMarca_IsoCode", "syc_m_marca", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+
+            success: function (response) {
+
+                $.each(response.lista_marca, function (key, value) {
+                    var nomMarca = value.Mar_nombre;
+                    var codMarca = value.Cod_marca;
+
+                    var selectMarca = new Option(nomMarca, codMarca);
+                    $(selectMarca).html(nomMarca);
+                    $(customMarca).append(selectMarca);
+                })
+                $.each(response.lista_marca, function (key, value) {
+                    var nomMarca = value.Mar_nombre;
+                    var codMarca = value.Cod_marca;
+
+                    var selectMarca = new Option(nomMarca, codMarca);
+                    $(selectMarca).html(nomMarca);
+                    $(filtroMarca).append(selectMarca);
+                })
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+    /***********************************************************************************/
+    /*Funcion para listar tipos de equipo en el select filtroEquipo                    */
+    /***********************************************************************************/
+
+    function js_listar_sub_clase_recurso() {
+        $.ajax({
+            url: '@Url.Action("Ctrl_ListaSubClaseRecurso_IsoCode", "syc_m_sub_clase_recurso", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+
+            success: function (response) {
+
+                $.each(response.listar_recurso, function (key, value) {
+                    var nomEquipo = value.Sbc_descripcion;
+                    var codEquipo = value.Cor_sub_clase_recurso;
+
+                    var selectEquipo = new Option(nomEquipo, codEquipo);
+                    $(selectEquipo).html(nomEquipo);
+                    $(filtroEquipo).append(selectEquipo);
+                })
+                $.each(response.listar_recurso, function (key, value) {
+                    var nomEquipo = value.Sbc_descripcion;
+                    var codEquipo = value.Cor_sub_clase_recurso;
+
+                    var selectEquipo = new Option(nomEquipo, codEquipo);
+                    $(selectEquipo).html(nomEquipo);
+                    $(customTipoEquipo).append(selectEquipo);
+                })
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+
+    /***********************************************************************************/
+    /* Funcion para listar los estados de los recursos en el select "customEstado"     */
+    /* y crear checkboxs en el apartado filtro                                         */
+    /***********************************************************************************/
+
+    function js_listar_estado_recurso() {
+        $.ajax({
+            url: '@Url.Action("Ctrl_ListaEstado_IsoCode", "syc_m_estado_recurso", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+
+            success: function (response) {
+
+                $('#lblEstado').append(`<br />`);
+
+                $.each(response.listar_estado, function (key, value) {
+                    var codEstado = value.Cod_estado_recurso;
+                    var descEstado = value.Est_descripcion;
+                    var checkbox_html;
+
+                    var selectEstado = new Option(descEstado, codEstado);
+                    $(selectEstado).html(descEstado);
+                    $(customEstado).append(selectEstado);
+
+                    checkbox_html = `<input type=\"checkbox\" value=\"${codEstado}\" name=\"chk_filt_estados\" id=\"chk_est_${codEstado}\" /><label></label>${descEstado}<br />`;
+                    $('#lblEstado').append(checkbox_html);
+
+                })
+
+                $.each(response.listar_estado, function (key, value) {
+                    var codEstado = value.Cod_estado_recurso;
+                    var descEstado = value.Est_descripcion;
+                    var selectEstado = new Option(descEstado, codEstado);
+                    $(selectEstado).html(descEstado);
+                    $(customeditEstado).append(selectEstado);
+                })
+
+            },
+            complete: function () {
+
+            }
+        });
+    }
+
+
+    /***********************************************************************************/
+    /* Funcion para listar los recursos                                                */
+    /***********************************************************************************/
+
+    function listarRecursos() {
+        $.ajax({
+            url: '@Url.Action("Ctrl_Listar_Recursos_Isocode", "syc_m_recurso_tic", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+
+            success: function (response) {
+                $('#tablaListaRecursos tbody').html("");
+                $.each(response.lista_iso, function (key, value) {
+
+                    const fila_iso = crearFila_iso({
+                        cor_recurso_tic: value.Cor_recurso_tic,
+                        sbc_descripcion: value.Sbc_descripcion,
+                        rti_cantidad: value.Rti_cantidad,
+                        mar_nombre: value.Mar_nombre,
+                        rti_modelo: value.Rti_modelo,
+                        rti_serie: value.Rti_serie,
+                        est_descripcion: value.Est_descripcion
+                    });
+
+                    $('#tablaListaRecursos tbody').append(fila_iso);
+                    console.log(response.lista_iso);
+                });
+                $('#tablaListaRecursos').footable;
+            }
+
+        });
+
+    }
+
+
+    /***********************************************************************************/
+    /* Funcion para crear las filas del tbody #tablaListaRecursos                      */
+    /***********************************************************************************/
+
+    function crearFila_iso(iso) {
+
+        var fila_html;
+
+        fila_html = `<tr>`;
+        fila_html += `<td><center><a data-target=\"#editarRecursos\" data-toggle=\"modal\" href = \"#editarRecursos\" onclick = \"js_editar_recurso_isocode(${iso.cor_recurso_tic}); js_limpiarCamposIngresar();\"> <img src = \"../../../../..//Content/Imagenes/editar.svg\" width = \"18\"/></center></td>`;
+        fila_html += `<td><center>${iso.sbc_descripcion}</center></td>`;
+        fila_html += `<td><center>${iso.rti_cantidad}</center></td>`;
+        fila_html += `<td><center>${iso.mar_nombre}</center></td>`;
+        fila_html += `<td><center>${iso.rti_modelo}</center></td>`;
+        fila_html += `<td><center>${iso.rti_serie}</center></td>`;
+        fila_html += `<td><center>${iso.est_descripcion}</center></td>`;
+        fila_html += `</tr>`;
+
+        return (fila_html);
+
+    }
+
+    /***********************************************************************************/
+    /* Funcion para listar el historial del recurso}                                   */
+    /***********************************************************************************/
+
+    function listarHistorialRecurso(cor_recurso_tic) {
+        $.ajax({
+            url: '@Url.Action("Ctrl_Listar_Historial_IsoCode", "syc_t_hist_recurso_tic", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                cor_recurso_tic: cor_recurso_tic
+            },
+
+            success: function (response) {
+                $('#listarHistorialRecurso tbody').html("");
+                $.each(response.lista_historial, function (key, value) {
+
+                    var hrt_fecha = ToJavaScriptDate(value.Hrt_fecha);
+
+                    const fila_iso = crearFila2_iso({
+                        est_descripcion: value.Est_descripcion,
+                        hrt_fecha: hrt_fecha,
+                        hrt_observacion: value.Hrt_observacion
+                    });
+
+                    $('#listarHistorialRecurso tbody').append(fila_iso);
+                    console.log(response.lista_historial);
+                });
+                $('#listarHistorialRecurso').footable;
+            }
+
+
+        });
+
+    }
+
+    /***********************************************************************************/
+    /* Funcion para crear las filas del tbody #listarHistorialRecurso                  */
+    /***********************************************************************************/
+
+    function crearFila2_iso(iso) {
+
+        var fila_html;
+
+        fila_html = `<tr>`;
+        fila_html += `<td><center></center></td>`;
+        fila_html += `<td><center></center></td>`;
+        fila_html += `<td><center>${iso.hrt_fecha}</center></td>`;
+        fila_html += `<td><center>${iso.est_descripcion}</center></td>`;
+        fila_html += `<td><center>${iso.hrt_observacion}</center></td>`;
+        fila_html += `</tr>`;
+
+        return (fila_html);
+
+    }
+
+
+</script>
+
+<script type="text/javascript" language="JavaScript">
+
+    /***********************************************************************************/
+    /* Funcion para agregar recursos a la base de datos desde el modal agregar         */
+    /***********************************************************************************/
+
+    function js_agregar_recurso_isocode() {
+
+        var correcto = js_validaciones();
+
+        if (correcto) {
+            $.ajax({
+                url: '@Url.Action("AgregarRecurso", "syc_m_recurso_tic", new { area = "SyC" })',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+
+                    Cor_suc_clase_recurso: parseInt($('#customTipoEquipo option:selected').val(), 10),
+                    Cod_marca: parseInt($('#customMarca option:selected').val(), 10),
+                    Cod_persona: 0,
+                    Rti_modelo: $('#txtmodelo').val(),
+                    Rti_descripcion: $('#txtdescripcion').val(),
+                    Rti_descripcion_corta: $('#txtdescripcionCorta').val(),
+                    Rti_num_parte: $('#txtnumParte').val(),
+                    Rti_serie: $('#txtserie').val(),
+                    Rti_licencia: $('#txtlicencia').val(),
+                    Rti_cantidad: parseInt($('#txtcantidad').val(), 10),
+                    Rti_observacion: $('#txtobservacion').val(),
+                    Cod_estado_recurso: parseInt($('#customEstado option:selected').val(), 10),
+                    Rti_fecha_ingreso: document.getElementById("txtfechaIng").value,
+                    Rti_fecha_adquisicion: document.getElementById("txtfechaAdq").value
+
+                },
+
+                success: function () {
+                    js_limpiarCamposIngresar();
+
+                },
+                error: function (xhr) {
+
+                    console.log(xhr.responseText);
+
+                },
+                complete: function () {
+
+                    $('#SuccessRecurso').modal('toggle');
+
+                    setTimeout(function () {
+                        $('#SuccessRecurso').modal('hide')
+                    }, 1500);
+
+                    listarRecursos();
+
+                }
+
+            });
+        }
+        else { return; }
+
+    }
+
+    /***********************************************************************************/
+    /* Funcion que permite setear los input del modal #editarRecursos pasandoles       */
+    /* los parametros del recurso seleccionado                                         */
+    /***********************************************************************************/
+
+    function js_editar_recurso_isocode(cor_recurso_tic) {
+
+        var correlativo = cor_recurso_tic;
+
+        $.ajax({
+            url: '@Url.Action("Ctrl_Listar_Recurso_SeleccionadoIsocode", "syc_m_recurso_tic", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                cor_recurso_tic: cor_recurso_tic
+            },
+
+            success: function (response) {
+
+                $.each(response.lista_iso_seleccion, function (key, value) {
+
+                    var ingreso = ToJavaScriptDate(value.Rti_fecha_ingreso);
+                    var adquisiccion = ToJavaScriptDate(value.Rti_fecha_adquisicion);
+
+                    $('#txtCorrelativo').val(cor_recurso_tic);
+                    $('#txtEstadoOld').val(value.Cod_estado_recurso);
+                    $('#txtObservacionOld').val(value.Rti_observacion);
+
+                    $('#customeditTipoEquipo').val(value.Sbc_descripcion);
+                    $('#txteditfechaIng').val(ingreso);
+                    $('#txteditfechaAdq').val(adquisiccion);
+                    $('#customeditEstado').val(value.Est_descripcion);
+                    $('#customeditMarca').val(value.Mar_nombre);
+                    $('#txteditmodelo').val(value.Rti_modelo);
+                    $('#txteditserie').val(value.Rti_serie);
+                    $('#txteditdescripcion').val(value.Rti_descripcion);
+                    $('#txteditdescripcionCorta').val(value.Rti_descripcion_corta);
+                    $('#txteditcantidad').val(value.Rti_cantidad);
+                    $('#txteditlicencia').val(value.Rti_licencia);
+                    $('#txteditnumParte').val(value.Rti_num_parte);
+                    $('#txteditobservacion').val("");
+                });
+
+            },
+
+            complete: function () {
+
+                listarHistorialRecurso(correlativo);
+
+            }
+
+        });
+
+    }
+
+    /***********************************************************************************/
+    /* Funcion para tranformar correctamente el tipo de dato DateTime                  */
+    /***********************************************************************************/
+
+    function ToJavaScriptDate(value) {
+
+        var pattern = /Date\(([^)]+)\)/;
+        var results = pattern.exec(value);
+        var dt = new Date(parseFloat(results[1]));
+        return (dt.getFullYear()) + "/" + (dt.getMonth() + 1) + "/" + (dt.getDate());
+
+    }
+
+    /***********************************************************************************/
+    /* Validaciones campo agregar                                                      */
+    /***********************************************************************************/
+
+    function js_validaciones() {
+
+        var cor_suc_clase_recurso = document.getElementById('customTipoEquipo').value;
+        var cod_marca = document.getElementById('customMarca').value;
+        var rti_modelo = document.getElementById('txtmodelo').value;
+        var rti_descripcion = document.getElementById('txtdescripcion').value;
+        var rti_descripcion_corta = document.getElementById('txtdescripcionCorta').value;
+        var rti_num_parte = document.getElementById('txtnumParte').value;
+        var rti_serie = document.getElementById('txtserie').value;
+        var rti_licencia = document.getElementById('txtlicencia').value;
+        var rti_cantidad = document.getElementById('txtcantidad').value;
+        var rti_observacion = document.getElementById('txtobservacion').value;
+        var cod_estado_recurso = document.getElementById('customEstado').value;
+        var rti_fecha_ingreso = document.getElementById("txtfechaIng").value;
+        var rti_fecha_adquisicion = document.getElementById("txtfechaAdq").value;
+
+        var correcto = true;
+
+        if (cor_suc_clase_recurso == null || cor_suc_clase_recurso == "") {
+            document.getElementById('customTipoEquipo').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('customTipoEquipo').style.borderColor = "";
+        }
+        if (cod_marca == null || cod_marca == "") {
+            document.getElementById('customMarca').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('customMarca').style.borderColor = "";
+        }
+        if (rti_modelo == null || rti_modelo == "") {
+            document.getElementById('txtmodelo').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtmodelo').style.borderColor = "";
+        }
+        if (rti_serie == null || rti_serie == "") {
+            document.getElementById('txtserie').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtserie').style.borderColor = "";
+        }
+        if (rti_fecha_ingreso == null || rti_fecha_ingreso == "") {
+            document.getElementById('txtfechaIng').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtfechaIng').style.borderColor = "";
+        }
+        if (rti_fecha_adquisicion == null || rti_fecha_adquisicion == "") {
+            document.getElementById('txtfechaAdq').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtfechaAdq').style.borderColor = "";
+        }
+        if (rti_descripcion == null || rti_descripcion == "") {
+            document.getElementById('txtdescripcion').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtdescripcion').style.borderColor = "";
+        }
+        if (rti_descripcion_corta == null || rti_descripcion_corta == "") {
+            document.getElementById('txtdescripcionCorta').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtdescripcionCorta').style.borderColor = "";
+        }
+        if (cod_estado_recurso == null || cod_estado_recurso == "") {
+            document.getElementById('customEstado').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('customEstado').style.borderColor = "";
+        }
+        if (rti_cantidad == null || rti_cantidad == "") {
+            document.getElementById('txtcantidad').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtcantidad').style.borderColor = "";
+        }
+        if (rti_licencia == null || rti_licencia == "") {
+            document.getElementById('txtlicencia').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtlicencia').style.borderColor = "";
+        }
+        if (rti_num_parte == null || rti_num_parte == "") {
+            document.getElementById('txtnumParte').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtnumParte').style.borderColor = "";
+        }
+        if (rti_observacion == null || rti_observacion == "") {
+            document.getElementById('txtobservacion').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txtobservacion').style.borderColor = "";
+        }
+
+        return correcto;
+
+    }
+
+    /***********************************************************************************/
+    /* Validaciones campo modificar                                                    */
+    /***********************************************************************************/
+
+    function js_validar_modificacion() {
+
+        var customeditEstado = document.getElementById('customeditEstado').value;
+        var txteditobservacion = document.getElementById('txteditobservacion').value;
+
+        var correcto = true;
+
+        if (customeditEstado == null || customeditEstado == "") {
+            document.getElementById('customeditEstado').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('customeditEstado').style.borderColor = "";
+        }
+
+        if (txteditobservacion == null || txteditobservacion == "") {
+            document.getElementById('txteditobservacion').style.borderColor = "#CD3435";
+            correcto = false;
+        }
+        else {
+            document.getElementById('txteditobservacion').style.borderColor = "";
+        }
+
+        return correcto;
+        
+    }
+
+    /***********************************************************************************/
+    /* Cambiar Estado del Recurso                                                      */
+    /***********************************************************************************/
+
+    function js_cambiar_estado() {
+
+        var cod = parseInt($('#customeditEstado option:selected').val(), 10);
+        var cor = document.getElementById('txtCorrelativo').value;
+
+        if (js_validar_modificacion()) {
+            $.ajax({
+                url: '@Url.Action("Ctrl_Modificar_Estado_Recurso", "syc_t_hist_recurso_tic", new { area = "SyC" })',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    Cod_estado_recurso: cod,
+                    Cor_recurso_tic: parseInt($('#txtCorrelativo').val(), 10),
+                    Rti_observacion: $('#txteditobservacion').val()
+                },
+
+                success: function () {
+
+                    listarRecursos();
+                    $('#SuccessModificar').modal('toggle');
+
+                    setTimeout(function () {
+                        $('#SuccessModificar').modal('hide')
+                    }, 1500);
+
+                },
+
+                error: function (xhr) {
+
+                    console.log(xhr.responseText);
+
+                },
+
+                complete: function () {
+
+                    listarHistorialRecurso(cor);
+                }
+
+            });
+
+        }
+
+    }
+
+    /***********************************************************************************/
+    /* Cambiar Estado del Recurso                                                      */
+    /***********************************************************************************/
+
+    function js_insertar_historial(Correlativo) {
+
+        $.ajax({
+
+            url: '@Url.Action("Ctrl_Agregar_Historial_Recurso", "syc_t_hist_recurso_tic", new { area = "SyC"})',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+
+                Cor_recurso_tic: Correlativo,
+                Cod_estado_recurso: parseInt($('#txtEstadoOld').val(), 10),
+                Htr_observacion: $('#txtObservacionOld').val()
+
+            },
+
+            error: function (xhr) {
+
+                console.log(xhr.responseText);
+
+            },
+
+            success: function () {
+                js_cambiar_estado();
+
+                //$('#editarRecursos').modal('toggle');
+
+                //setTimeout(function () {
+                //    $('#editarRecursos').modal('hide')
+                //}, 0000);
+
+            }
+
+        });
+
+    }
+    
+    function js_filtro() {
+        var arregloEstados = [];
+
+        $.each($("input:checkbox[name=chk_filt_estados]:checked"), function (key, value) {
+
+            var id = value.value; //id de estado
+            arregloEstados.push(id);
+        });
+
+        var id_Equipo = document.getElementById("filtroEquipo").value;
+        var id_Marca = document.getElementById("filtroMarca").value;
+        var desc_Modelo = document.getElementById("txtmodelofiltro").value;
+
+        if (id_Equipo.length<1) {
+            id_Equipo = 0;
+        }
+        if (id_Marca.length < 1) {
+            id_Marca = 0;
+        }
+            js_filtrarRecursos(id_Equipo, id_Marca, desc_Modelo, arregloEstados);
+       
+     
+        
+    }
+
+    function js_filtrarRecursos(equipo, marca, modelo, estados) {
+       
+        $.ajax({
+            url: '@Url.Action("Ctrl_Filtrar_Recursos", "syc_m_recurso_tic", new { area = "SyC" })',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                id_equipo: equipo,
+                id_marca: marca,
+                desc_modelo: modelo,
+                arreglo: estados
+            },
+
+            success: function (response) {
+
+                $('#tablaListaRecursos tbody').html("");
+                var list = response;
+                $.each(list, function (key, value) {
+                    console.log(value.Cor_recurso_tic);
+                    const fila_iso = crearFila_iso({
+                        cor_recurso_tic: value.Cor_recurso_tic,
+                        sbc_descripcion: value.Sbc_descripcion,
+                        rti_cantidad: value.Rti_cantidad,
+                        mar_nombre: value.Mar_nombre,
+                        rti_modelo: value.Rti_modelo,
+                        rti_serie: value.Rti_serie,
+                        est_descripcion: value.Est_descripcion
+                    });
+
+                    $('#tablaListaRecursos tbody').append(fila_iso);
+                   
+                });
+                $('#tablaListaRecursos').footable;
+               
+            },
+            error: function (xhr) {
+
+                console.log(xhr.responseText);
+            }
+
+        });
+
+    }
+
+</script>
+
+
+
+
+

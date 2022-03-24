@@ -1,0 +1,254 @@
+﻿.col-lg-10 {
+    margin-top: 20px;
+}
+
+.col-lg-10 label {
+    height: 17px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030;
+}
+
+.col-lg-10 label[for="listarecursos"] {
+    height: 12px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030;
+    margin-top: 10px;
+}
+
+.col-lg-10 a {
+    height: 12px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.syc_table table thead tr th {
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #0d3857;
+}
+
+.syc_table table tbody tr td {
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #0d3857;
+    word-wrap: break-word;
+}
+
+.col-lg-10 .syc_table {
+    height: 46em;
+}
+
+.col-lg-10 .syc_table table {
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+.col-lg-10 .syc_table table thead {
+    flex: 0 0 auto;
+    width: 100%;
+    display: inline-table;
+    table-layout: fixed;
+}
+
+.col-lg-10 .syc_table table tbody {
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.col-lg-10 .syc_table table tbody::-webkit-scrollbar {
+    width: 0px;
+}
+
+.col-lg-10 .syc_table table tbody tr {
+    width: 100%;
+    table-layout: fixed;
+    display: inline-table;
+}
+
+@media only screen and (max-width: 414px) {
+
+    .col-lg-10 .syc_table {
+        display: block;
+    }
+
+    .col-lg-10 .syc_table table {
+        margin-bottom: 0;
+        flex-flow: column;
+        height: 71%;
+        width: 100%;
+        white-space: pre-wrap;
+        margin-top: -50px;
+    }
+
+    .col-lg-10 .syc_table table tbody {
+        margin-top: -15.3px;
+        height: 430px;
+    }
+
+    .col-lg-10 .syc_table table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    .col-lg-10 .syc_table table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .col-lg-10 .syc_table tr {
+        border: 1px solid #ccc;
+    }
+
+    .col-lg-10 .syc_table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        word-wrap: break-word;
+    }
+
+    .col-lg-10 .syc_table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Actualizar";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Tipo de Equipo";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Cantidad";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Marca";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Modelo";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Serie";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Estado";
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .col-lg-10 .table-responsive-vertical {
+        display: block;
+    }
+
+    .col-lg-10 .syc_table table {
+        margin-bottom: 0;
+        flex-flow: column;
+        height: 71%;
+        width: 100%;
+        white-space: pre-wrap;
+        margin-top: -50px;
+    }
+
+    .col-lg-10 .syc_table table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    .col-lg-10 .syc_table table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .col-lg-10 .syc_table tr {
+        border: 1px solid #ccc;
+    }
+
+    .col-lg-10 .syc_table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .col-lg-10 .syc_table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Actualizar";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Tipo de Equipo";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Cantidad";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Marca";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Modelo";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Serie";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Estado";
+    }
+}
+

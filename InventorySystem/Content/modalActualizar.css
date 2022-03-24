@@ -1,0 +1,2196 @@
+﻿.modal-header h5 {
+    height: 17px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030;
+}
+
+.modal-content {
+    margin-top: 60px;
+    width: 1000px;
+    margin-right: 200px;
+    right: 20px;
+}
+
+.modal-body label {
+    height: 12px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3d3d3d;
+}
+
+.modal-body label[for="editmarca"] {
+    margin-left: 15.5%;
+}
+
+.modal-body label[for="editmodelo"] {
+    margin-left: 16%;
+}
+
+.modal-body label[for="editserie"] {
+    margin-left: 15%;
+}
+
+.modal-body label[for="editfechaadq"] {
+    margin-left: 15%;
+}
+
+.modal-body label[for="editdescripcion"] {
+    margin-left: 11.5%;
+}
+
+.modal-body label[for="editdescCorta"] {
+    margin-left: 15%;
+}
+
+.modal-body label[for="editcantidad"] {
+    margin-left: 10%;
+}
+
+.modal-body label[for="editlicencia"] {
+    margin-left: 7%;
+}
+
+.modal-body label[for="editnumParte"] {
+    margin-left: 15%;
+}
+
+.modal-body label[for="editobservacion"] {
+    margin-left: 7.8%;
+}
+
+.modal-body input[id="customeditTipoEquipo"] {
+    width: 170px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.modal-body input[id="customeditMarca"] {
+    width: 170px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditmodelo"] {
+    width: 170px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 34px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditserie"] {
+    width: 420px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 34px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditfechaIng"] {
+    height: 32px;
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditfechaAdq"] {
+    height: 32px;
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditdescripcion"] {
+    height: 33px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 34px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditdescripcionCorta"] {
+    height: 33px;
+    width: 255px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.modal-body select[id="customeditEstado"] {
+    width: 130px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditcantidad"] {
+    height: 33px;
+    width: 110px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 14px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditlicencia"] {
+    height: 33px;
+    width: 190px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditnumParte"] {
+    height: 33px;
+    width: 140px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 19px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txteditobservacion"] {
+    height: 33px;
+    width: 232px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.modal-footer button[id="btnActualizar"] {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #48be48;
+    font-family: Roboto;
+    position: relative;
+    color: #ffffff;
+    right: 760px;
+    font-size: 15px;
+}
+
+.modal-body .syc_table table thead tr th {
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #0d3857;
+    border-bottom-color: red;
+}
+
+@media only screen and (max-width: 1045px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 920px;
+        left: 20px;
+    }
+
+    .modal-body label[for="editmarca"] {
+        margin-left: 17%;
+    }
+
+    .modal-body label[for="editmodelo"] {
+        margin-left: 16.7%;
+    }
+
+    .modal-body label[for="editserie"] {
+        margin-left: 15%;
+    }
+
+    .modal-body label[for="editfechaadq"] {
+        margin-left: 16.5%;
+    }
+
+    .modal-body label[for="editdescripcion"] {
+        margin-left: 13.5%;
+    }
+
+    .modal-body label[for="editdescCorta"] {
+        margin-left: 15%;
+    }
+
+    .modal-body label[for="editcantidad"] {
+        margin-left: 10%;
+    }
+
+    .modal-body label[for="editlicencia"] {
+        margin-left: 8%;
+    }
+
+    .modal-body label[for="editnumParte"] {
+        margin-left: 16%;
+    }
+
+    .modal-body label[for="editobservacion"] {
+        margin-left: 7.8%;
+    }
+
+    .modal-body select[id="customeditTipoEquipo"] {
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body select[id="custoeditmMarca"] {
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditmodelo"] {
+        width: 170px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 28px;
+        font-size: 15px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditserie"] {
+        width: 420px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditfechaIng"] {
+        height: 32px;
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditfechaAdq"] {
+        height: 32px;
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 29px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditdescripcion"] {
+        height: 33px;
+        width: 200px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 39px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditdescripcionCorta"] {
+        height: 33px;
+        width: 243px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body select[id="customeditEstado"] {
+        width: 130px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .modal-body input[id="txteditcantidad"] {
+        height: 33px;
+        width: 110px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditlicencia"] {
+        height: 33px;
+        width: 190px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditnumParte"] {
+        height: 33px;
+        width: 140px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditobservacion"] {
+        height: 33px;
+        width: 230px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnActualizar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 690px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 730px;
+        left: 20px;
+    }
+
+    .modal-body input[id="customeditTipoEquipo"] {
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="customeditMarca"] {
+        width: 140px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditmodelo"] {
+        width: 150px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditserie"] {
+        width: 170px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 20px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    
+    .modal-body label[for="editmarca"] {
+        margin-left: 18.5%;
+    }
+
+    .modal-body label[for="editfechaadq"] {
+        margin-left: 18%;
+    }
+
+    .modal-body label[for="editdescripcion"] {
+        margin-left: 13.5%;
+    }
+
+    .modal-body label[for="editdescCorta"] {
+        margin-left: 8%;
+    }
+
+    .modal-body input[id="txteditfechaIng"] {
+        height: 32px;
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditfechaAdq"] {
+        height: 32px;
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 29px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditdescripcion"] {
+        height: 33px;
+        width: 120px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 37px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditdescripcionCorta"] {
+        height: 33px;
+        width: 175px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body select[id="customeditEstado"] {
+        width: 110px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .modal-body input[id="txteditcantidad"] {
+        height: 33px;
+        width: 100px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txteditlicencia"] {
+        height: 33px;
+        width: 100px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body label[for="editnumParte"] {
+        margin-left: 8%;
+    }
+
+    .modal-body input[id="txteditnumParte"] {
+        height: 33px;
+        width: 120px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txteditobservacion"] {
+        height: 33px;
+        width: 175px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 22px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnActualizar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 490px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 365px;
+        left: 15px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="edittipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmarca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmodelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editserie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editfechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -35px;
+        position: absolute;
+    }
+
+    .modal-body label[for="editfechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 55px;
+    }
+
+    .modal-body label[for="editdescripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="editdescCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editestado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-top: -35px;
+        position: absolute;
+    }
+
+    .modal-body label[for="editcantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .modal-body label[for="editlicencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editnumParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editobservacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body input[id="customeditTipoEquipo"] {
+        height: 44px;
+        right: 50px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="customeditMarca"] {
+        height: 44px;
+        right: 50px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -245px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditmodelo"] {
+        height: 44px;
+        right: 50px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -150px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditserie"] {
+        height: 44px;
+        right: 50px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -60px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditfechaIng"] {
+        height: 44px;
+        right: 50px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -325px;
+    }
+
+    .modal-body input[id="txteditfechaAdq"] {
+        height: 44px;
+        width: 350px;
+        right: 50px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txteditdescripcion"] {
+        height: 44px;
+        width: 350px;
+        right: 50px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txteditdescripcionCorta"] {
+        height: 44px;
+        width: 350px;
+        right: 50px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -60px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customeditEstado"] {
+        width: 350px;
+        right: 50px;
+        height: 44px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -420px;
+    }
+
+    .modal-body input[id="txteditcantidad"] {
+        height: 44px;
+        right: 50px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -330px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditlicencia"] {
+        height: 44px;
+        right: 50px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txteditnumParte"] {
+        height: 44px;
+        right: 50px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body label[for = "hist"] {
+        font-size: 23px; 
+    }
+
+    .modal-body input[id="txteditobservacion"] {
+        height: 44px;
+        width: 350px;
+        right: 50px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnActualizar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 80px;
+        font-size: 15px;
+    }
+
+    .modal-body table {
+        font-family: Roboto;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        color: #0d3857;
+        border-bottom-color: red;
+        width: 80%;
+    }
+
+    .modal-body h5 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 330px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="tipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmarca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmodelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editserie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editfechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -35px;
+        position: absolute;
+    }
+
+    .modal-body label[for="editfechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .modal-body label[for="editdescripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="editdescCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editestado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editcantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editlicencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editnumParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editobservacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body input[id="customeditTipoEquipo"] {
+        height: 44px;
+        left: 25px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -335px;
+    }
+
+    .modal-body input[id="customeditMarca"] {
+        height: 44px;
+        left: 25px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -240px;
+    }
+
+    .modal-body input[id="txteditmodelo"] {
+        height: 44px;
+        left: 25px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -155px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditserie"] {
+        height: 44px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -65px;
+        left: 25px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditfechaIng"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -330px;
+    }
+
+    .modal-body input[id="txteditfechaAdq"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txteditdescripcion"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txteditdescripcionCorta"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -60px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customeditEstado"] {
+        width: 350px;
+        height: 44px;
+        left: 25px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -425px;
+    }
+
+    .modal-body input[id="txteditcantidad"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditlicencia"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txteditnumParte"] {
+        height: 44px;
+        left: 25px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txteditobservacion"] {
+        height: 44px;
+        width: 350px;
+        left: 25px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnActualizar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 65px;
+        font-size: 15px;
+    }
+
+    .modal-body label[for = "hist"], .table-responsive-vertical {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 315px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="tipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmarca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editmodelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editserie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editfechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -35px;
+        position: absolute;
+    }
+
+    .modal-body label[for="editfechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .modal-body label[for="editdescripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="editdescCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editestado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editcantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editlicencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editnumParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="editobservacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body input[id="customeditTipoEquipo"] {
+        height: 44px;
+        left: 18px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -335px;
+    }
+
+    .modal-body input[id="customeditMarca"] {
+        height: 44px;
+        left: 18px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -240px;
+    }
+
+    .modal-body input[id="txteditmodelo"] {
+        height: 44px;
+        left: 18px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -155px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditserie"] {
+        height: 44px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -65px;
+        left: 18px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditfechaIng"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -330px;
+    }
+
+    .modal-body input[id="txteditfechaAdq"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txteditdescripcion"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txteditdescripcionCorta"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -60px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customeditEstado"] {
+        width: 350px;
+        height: 44px;
+        left: 18px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -425px;
+    }
+
+    .modal-body input[id="txteditcantidad"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txteditlicencia"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txteditnumParte"] {
+        height: 44px;
+        left: 18px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txteditobservacion"] {
+        height: 44px;
+        width: 350px;
+        left: 18px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnActualizar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 65px;
+        font-size: 15px;
+    }
+
+    .modal-body label[for = "hist"], .table-responsive-vertical {
+        display: none;
+    }
+   
+}
+
+/*@media only screen and (max-width: 320px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 270px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+        .modal-body label[for="tipoEquipo"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-right: 100px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="marca"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="modelo"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="serie"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="fechaIng"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            margin-top: -50px;
+            position: absolute;
+        }
+
+        .modal-body label[for="fechaadq"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            position: absolute;
+            margin-top: 30px;
+        }
+
+        .modal-body label[for="descripcion"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            margin-top: 140px;
+        }
+
+        .modal-body label[for="descCorta"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="estado"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="cantidad"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="licencia"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="numParte"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="observacion"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+    .modal-body select[id="customTipoEquipo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -645px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -500px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -170px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtserie"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -75px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -345px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -30px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 240px;
+        height: 38px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -430px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 5px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 0px;
+        font-size: 15px;
+    }
+}*/

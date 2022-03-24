@@ -1,0 +1,87 @@
+﻿.row {
+    margin-top: -30px;
+}
+
+.col-lg-2 {
+    margin-top: 20px;
+}
+
+.col-lg-2 label[for="filtro"] {
+    width: 23.5px;
+    height: 12px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3d3737;
+    padding: 10px;
+}
+
+.col-lg-2 label {
+    height: 12px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.col-lg-2 select {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.col-lg-2 input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.col-lg-2 input[type="checkbox"] {
+    width: 24.5px;
+    height: 24.5px;
+    border-radius: 2px;
+    border: solid 1.5px #dbdbdb;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.col-lg-2 button {
+    width: 100%;
+    font-family: Roboto;
+    border-radius: 5px;
+    border: solid 1px #a4a4a4;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .col-lg-2 {
+        display: none;
+    }
+
+}
+
+

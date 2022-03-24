@@ -1,0 +1,2160 @@
+﻿.modal-header h5 {
+    height: 17px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #303030; 
+}
+
+.modal-content {
+    margin-top: 100px;
+    width: 1000px;
+    margin-right: 200px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.modal-body label {
+    height: 12px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3d3d3d;
+}
+
+.modal-body label[for="marca"] {
+    margin-left: 16.3%;
+}
+
+.modal-body label[for="modelo"] {
+    margin-left: 16.8%;
+}
+
+.modal-body label[for="serie"] {
+    margin-left: 15.6%;
+}
+
+.modal-body label[for="fechaadq"] {
+    margin-left: 8.2%;
+}
+
+.modal-body label[for="descripcion"] {
+    margin-left: 5%;
+}
+
+.modal-body label[for="descCorta"] {
+    margin-left: 15%;
+}
+
+.modal-body label[for="cantidad"] {
+    margin-left: 10%;
+}
+
+.modal-body label[for="licencia"] {
+    margin-left: 8%;
+}
+
+.modal-body label[for="numParte"] {
+    margin-left: 15.6%;
+}
+
+.modal-body label[for="observacion"] {
+    margin-left: 8%;
+}
+
+.modal-body label[for="persona"] {
+    margin-top: 10px;
+}
+
+.modal-body select[id="customTipoEquipo"] {
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.modal-body select[id="customMarca"] {
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 37px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtmodelo"] {
+    width: 170px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtserie"] {
+    width: 420px;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 42px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtfechaIng"] {
+    height: 32px;
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtfechaAdq"] {
+    height: 32px;
+    width: 170px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    margin-left: 37px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtdescripcion"] {
+    height: 33px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtdescripcionCorta"] {
+    height: 33px;
+    width: 278px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 39px;
+    font-size: 15px;
+}
+
+.modal-body select[id="customEstado"] {
+    width: 130px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtcantidad"] {
+    height: 33px;
+    width: 110px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtlicencia"] {
+    height: 33px;
+    width: 190px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 37px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtnumParte"] {
+    height: 33px;
+    width: 140px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtobservacion"] {
+    height: 33px;
+    width: 255px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.modal-body input[id="txtPersona"] {
+    margin-top: 5px;
+    height: 33px;
+    width: 260px;
+    border-radius: 5px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.modal-footer button[id="btnIngresar"] {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #48be48;
+    font-family: Roboto;
+    position: relative;
+    color: #ffffff;
+    right: 560px;
+    font-size: 15px;
+}
+
+.modal-footer button[id="btnLimpiar"] {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Roboto;
+    position: relative;
+    color: #303030;
+    right: 550px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1045px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 920px;
+        left: 20px;
+    }
+
+    .modal-body select[id="customTipoEquipo"] {
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        width: 170px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 28px;
+        font-size: 15px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtserie"] {
+        width: 420px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 32px;
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 32px;
+        width: 170px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 29px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 33px;
+        width: 200px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 39px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 33px;
+        width: 243px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 130px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 33px;
+        width: 110px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 33px;
+        width: 190px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 33px;
+        width: 140px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 33px;
+        width: 230px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 490px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 480px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 730px;
+        left: 20px;
+    }
+
+    .modal-body select[id="customTipoEquipo"] {
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        width: 140px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 29px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        width: 150px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+        margin-bottom: 9px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtserie"] {
+        width: 170px;
+        height: 32px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 20px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body label[for="fechaadq"] {
+        margin-left: 7%;
+    }
+
+    .modal-body label[for="descripcion"] {
+        margin-left: 4%;
+    }
+
+    .modal-body label[for="descCorta"] {
+        margin-left: 8%;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 32px;
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 32px;
+        width: 150px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 29px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 33px;
+        width: 120px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 37px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 33px;
+        width: 175px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 110px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 33px;
+        width: 100px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 33px;
+        width: 100px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+
+    .modal-body label[for="marca"] {
+        margin-left: 18%;
+    }
+
+    .modal-body label[for="numParte"] {
+        margin-left: 8%;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 33px;
+        width: 120px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 33px;
+        width: 175px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 22px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 290px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 280px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 365px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="tipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="marca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="modelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="serie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="fechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -50px;
+        position: absolute;
+    }
+
+    .modal-body label[for="fechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .modal-body label[for="descripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="descCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="estado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="cantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="licencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="numParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="observacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body select[id="customTipoEquipo"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -645px;
+
+    }
+
+    .modal-body select[id="customMarca"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -500px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -170px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtserie"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -75px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -345px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -60px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 350px;
+        height: 38px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -430px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 5px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 330px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+        .modal-body label[for="tipoEquipo"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-right: 100px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="marca"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="modelo"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="serie"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="fechaIng"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            margin-top: -50px;
+            position: absolute;
+        }
+
+        .modal-body label[for="fechaadq"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            position: absolute;
+            margin-top: 30px;
+        }
+
+        .modal-body label[for="descripcion"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+            margin-top: 140px;
+        }
+
+        .modal-body label[for="descCorta"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="estado"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="cantidad"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="licencia"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="numParte"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+        .modal-body label[for="observacion"] {
+            height: 12px;
+            font-family: Roboto;
+            font-size: 23px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3d3d3d;
+            margin-left: 0px;
+            margin-right: 132px;
+            margin-bottom: 80px;
+        }
+
+    .modal-body select[id="customTipoEquipo"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -645px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -500px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -170px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtserie"] {
+        height: 38px;
+        width: 280px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -75px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -345px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -30px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 350px;
+        height: 38px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -430px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 38px;
+        width: 350px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 5px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 315px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="tipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="marca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="modelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="serie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="fechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -50px;
+        position: absolute;
+    }
+
+    .modal-body label[for="fechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .modal-body label[for="descripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="descCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="estado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="cantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="licencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="numParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="observacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body select[id="customTipoEquipo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -645px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -500px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -170px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtserie"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -75px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -345px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -30px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 240px;
+        height: 38px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -430px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 5px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 0px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .modal-content {
+        margin-top: 100px;
+        width: 270px;
+        left: 20px;
+    }
+
+    .modal-body label {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+
+    .modal-body label[for="tipoEquipo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-right: 100px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="marca"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="modelo"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="serie"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="fechaIng"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: -50px;
+        position: absolute;
+    }
+
+    .modal-body label[for="fechaadq"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .modal-body label[for="descripcion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+        margin-top: 140px;
+    }
+
+    .modal-body label[for="descCorta"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="estado"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="cantidad"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="licencia"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="numParte"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body label[for="observacion"] {
+        height: 12px;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        margin-left: 0px;
+        margin-right: 132px;
+        margin-bottom: 80px;
+    }
+
+    .modal-body select[id="customTipoEquipo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-top: -645px;
+    }
+
+    .modal-body select[id="customMarca"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -500px;
+    }
+
+    .modal-body input[id="txtmodelo"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -170px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtserie"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -75px;
+        left: 10px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtfechaIng"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -345px;
+    }
+
+    .modal-body input[id="txtfechaAdq"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -235px;
+    }
+
+    .modal-body input[id="txtdescripcion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -150px;
+    }
+
+    .modal-body input[id="txtdescripcionCorta"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -30px;
+        position: absolute;
+    }
+
+    .modal-body select[id="customEstado"] {
+        width: 240px;
+        height: 38px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 9px;
+        position: absolute;
+        margin-top: -430px;
+    }
+
+    .modal-body input[id="txtcantidad"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-top: -335px;
+        position: absolute;
+    }
+
+    .modal-body input[id="txtlicencia"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -245px;
+    }
+
+    .modal-body input[id="txtnumParte"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -155px;
+    }
+
+    .modal-body input[id="txtobservacion"] {
+        height: 38px;
+        width: 240px;
+        border-radius: 5px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-left: 0px;
+        font-size: 15px;
+        position: absolute;
+        margin-top: -60px;
+    }
+
+    .modal-footer button[id="btnIngresar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #48be48;
+        font-family: Roboto;
+        position: relative;
+        color: #ffffff;
+        right: 5px;
+        font-size: 15px;
+    }
+
+    .modal-footer button[id="btnLimpiar"] {
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: Roboto;
+        position: relative;
+        color: #303030;
+        right: 0px;
+        font-size: 15px;
+    }
+}
